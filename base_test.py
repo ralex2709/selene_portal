@@ -1,6 +1,10 @@
+import time
+
 from selene import be
 from selene.support.shared import browser
 from selene.support.shared.jquery_style import s
+
+from kernel.local_storage import LocalStorage
 
 
 class BaseTest:
@@ -18,6 +22,8 @@ class BaseTest:
         browser.open('https://maxitest.ru/login')
         browser.config.browser_name = 'chrome'
         browser.config.reports_folder = './screens'
+        local_storage = LocalStorage(browser.driver)
+        local_storage.set('push', str(int(round(time.time() * 1000))))
 
     def login(self):
         s('#phone').should(be.blank).click().set_value(self.phone)
