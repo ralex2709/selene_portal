@@ -1,6 +1,4 @@
-import time
-
-from selene import be, query
+from selene import be
 from selene.support import by
 from selene.support.shared.jquery_style import s, ss
 
@@ -9,7 +7,6 @@ from helpers.string_helper import randomworld
 
 
 class TestProfileEdit(BaseTest):
-
     is_private_phone_select = False
     is_show_birthday_select = False
     skype = 'skype'
@@ -91,7 +88,6 @@ class TestProfileEdit(BaseTest):
             self.is_private_phone_select = True
         else:
             self.is_private_phone_select = False
-
 
     def show_birthday(self, cbx):
         if cbx.get_attribute('class') == 'cbx active':
