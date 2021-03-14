@@ -1,3 +1,5 @@
+import glob
+import os
 import time
 
 from selene import be
@@ -8,8 +10,10 @@ from kernel.local_storage import LocalStorage
 
 
 class BaseTest:
+    first_test = True
     password = '123456789'
     phone = '(981)437-01-53'
+    screens_folder_path = './screens'
 
     def setup(self):
         self.config()
@@ -19,9 +23,10 @@ class BaseTest:
         self.logout()
 
     def config(self):
-        browser.open('https://maxitest.ru/login')
+        self.clear_screens()
         browser.config.browser_name = 'chrome'
-        browser.config.reports_folder = './screens'
+        browser.open('https://maxitest.ru/login')
+        browser.config.reports_folder = self.screens_folder_path
         local_storage = LocalStorage(browser.driver)
         local_storage.set('push', str(int(round(time.time() * 1000))))
 
@@ -39,3 +44,9 @@ class BaseTest:
         s('.thanks-aside').should(be.visible)
         assert browser.driver.current_url == 'https://maxitest.ru/news'
 
+    def clear_screens(self):
+        if BaseTest.first_test:
+            files = glob.glob(os.path.join(self.screens_folder_path, '*'))
+            for f in files:
+                os.remove(f)
+            BaseTest.first_test = False
