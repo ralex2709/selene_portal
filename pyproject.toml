@@ -6,7 +6,7 @@ authors = ["Alexandra <ralex2709@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-selene = "^1.0.2"
+selene = ">=2.0.0a39"
 
 [tool.poetry.dev-dependencies]
 
