@@ -52,7 +52,7 @@ class TestAuthorization(BaseTest):
 
     def set_captcha(self):
         s('#phone').should(be.blank).click().set_value(self.phone)
-        s('#captcha').set_value('йцукен')
+        # s('#captcha').set_value('йцукен')
         s('.main-btn_primary').click()
 
 
@@ -69,7 +69,7 @@ def back():
 
 def go_captcha():
     s(by.link_text('Восстановление пароля')).click()
-    s('#captcha').should(be.blank)
+    # s('#captcha').should(be.blank)
     assert browser.driver.current_url == 'https://maxitest.ru/recover'
 
 
