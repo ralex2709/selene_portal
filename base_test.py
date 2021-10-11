@@ -2,7 +2,9 @@ import glob
 import os
 import time
 
+import selenium.webdriver
 from selene import be
+from selene.support import webdriver
 from selene.support.shared import browser
 from selene.support.shared.jquery_style import s
 
