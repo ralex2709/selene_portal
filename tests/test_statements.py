@@ -24,6 +24,28 @@ class TestStatments(BaseTest):
     def check_ndfl(self):
         ss('.input-base-control').element(1).click().set_value(
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
+        s('.statements__count-btn').click()
+        s('.main-btn_primary').click()
+        s('.modal__wrapper').should(be.visible)
+        s('.modal__close').click()
+
+        ss('.period-btn').element(1).click()
+        ss('.input-base-control').element(1).click().set_value(
+           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
+        s('.main-btn_primary').click()
+        s('.modal__wrapper').should(be.visible)
+        s('.modal__close').click()
+
+        ss('.period-btn').element(2).click()
+        ss('.input-base-control').element(1).click().set_value(
+           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
+        s('.main-btn_primary').click()
+        s('.modal__wrapper').should(be.visible)
+        s('.modal__close').click()
+
+        ss('.input-base-control').element(0).click().set_value('2021')
+        ss('.input-base-control').element(1).click().set_value(
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
         s('.main-btn_primary').click()
         s('.modal__wrapper').should(be.visible)
         s('.modal__close').click()
@@ -37,9 +59,51 @@ class TestStatments(BaseTest):
         s('.modal__wrapper').should(be.visible)
         s('.modal__close').click()
 
+        ss('.period-btn').element(1).click()
+        ss('.input-base-control').element(1).click().set_value(
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
+        s('.main-btn_primary').click()
+        s('.modal__wrapper').should(be.visible)
+        s('.modal__close').click()
+
+        ss('.period-btn').element(2).click()
+        ss('.input-base-control').element(1).click().set_value(
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
+        s('.main-btn_primary').click()
+        s('.modal__wrapper').should(be.visible)
+        s('.modal__close').click()
+
+        ss('.input-base-control').element(0).click().set_value('2021')
+        ss('.input-base-control').element(1).click().set_value(
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
+        s('.main-btn_primary').click()
+        s('.modal__wrapper').should(be.visible)
+        s('.modal__close').click()
+
     def check_182N(self):
         ss('.services-aside__link').element(2).click()
         assert browser.driver.current_url == 'https://maxitest.ru/v2/services/statements/STATEMENT_182H'
+        ss('.input-base-control').element(1).click().set_value(
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
+        s('.main-btn_primary').click()
+        s('.modal__wrapper').should(be.visible)
+        s('.modal__close').click()
+
+        ss('.period-btn').element(1).click()
+        ss('.input-base-control').element(1).click().set_value(
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
+        s('.main-btn_primary').click()
+        s('.modal__wrapper').should(be.visible)
+        s('.modal__close').click()
+
+        ss('.period-btn').element(2).click()
+        ss('.input-base-control').element(1).click().set_value(
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
+        s('.main-btn_primary').click()
+        s('.modal__wrapper').should(be.visible)
+        s('.modal__close').click()
+
+        ss('.input-base-control').element(0).click().set_value('2021')
         ss('.input-base-control').element(1).click().set_value(
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
         s('.main-btn_primary').click()
