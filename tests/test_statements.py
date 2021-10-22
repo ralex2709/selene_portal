@@ -1,4 +1,4 @@
-from selene import be
+from selene import be, have
 from selene.support.shared import browser
 from selene.support.shared.jquery_style import s, ss
 
@@ -52,6 +52,7 @@ class TestStatements(BaseTest):
         ss('.input-base-control').element(1).click().set_value(
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
         ss('.statements__count-btn').element(1).click()
+        s('.statements__count-number').should(have.text('2'))
         s('.main-btn_primary').click()
         s('.modal__wrapper').should(be.visible)
         s('.modal__close').click()
@@ -60,6 +61,7 @@ class TestStatements(BaseTest):
         ss('.input-base-control').element(1).click().set_value(
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
         ss('.statements__count-btn').element(1).click()
+        s('.statements__count-number').should(have.text('2'))
         s('.main-btn_primary').click()
         s('.modal__wrapper').should(be.visible)
         s('.modal__close').click()
@@ -68,6 +70,7 @@ class TestStatements(BaseTest):
         ss('.input-base-control').element(1).click().set_value(
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
         ss('.statements__count-btn').element(1).click()
+        s('.statements__count-number').should(have.text('2'))
         s('.main-btn_primary').click()
         s('.modal__wrapper').should(be.visible)
         s('.modal__close').click()
@@ -76,6 +79,7 @@ class TestStatements(BaseTest):
         ss('.input-base-control').element(1).click().set_value(
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
         ss('.statements__count-btn').element(1).click()
+        s('.statements__count-number').should(have.text('2'))
         s('.main-btn_primary').click()
         s('.modal__wrapper').should(be.visible)
         s('.modal__close').click()
@@ -114,6 +118,7 @@ class TestStatements(BaseTest):
         ss('.input-base-control').element(1).click().set_value(
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
         ss('.statements__count-btn').element(1).click()
+        s('.statements__count-number').should(have.text('2'))
         s('.main-btn_primary').click()
         s('.modal__wrapper').should(be.visible)
         s('.modal__close').click()
@@ -122,6 +127,7 @@ class TestStatements(BaseTest):
         ss('.input-base-control').element(1).click().set_value(
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
         ss('.statements__count-btn').element(1).click()
+        s('.statements__count-number').should(have.text('2'))
         s('.main-btn_primary').click()
         s('.modal__wrapper').should(be.visible)
         s('.modal__close').click()
@@ -130,6 +136,7 @@ class TestStatements(BaseTest):
         ss('.input-base-control').element(1).click().set_value(
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
         ss('.statements__count-btn').element(1).click()
+        s('.statements__count-number').should(have.text('2'))
         s('.main-btn_primary').click()
         s('.modal__wrapper').should(be.visible)
         s('.modal__close').click()
@@ -138,6 +145,7 @@ class TestStatements(BaseTest):
         ss('.input-base-control').element(1).click().set_value(
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
         ss('.statements__count-btn').element(1).click()
+        s('.statements__count-number').should(have.text('2'))
         s('.main-btn_primary').click()
         s('.modal__wrapper').should(be.visible)
         s('.modal__close').click()
@@ -176,6 +184,7 @@ class TestStatements(BaseTest):
         ss('.input-base-control').element(1).click().set_value(
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
         ss('.statements__count-btn').element(1).click()
+        s('.statements__count-number').should(have.text('2'))
         s('.main-btn_primary').click()
         s('.modal__wrapper').should(be.visible)
         s('.modal__close').click()
@@ -184,6 +193,7 @@ class TestStatements(BaseTest):
         ss('.input-base-control').element(1).click().set_value(
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
         ss('.statements__count-btn').element(1).click()
+        s('.statements__count-number').should(have.text('2'))
         s('.main-btn_primary').click()
         s('.modal__wrapper').should(be.visible)
         s('.modal__close').click()
@@ -192,6 +202,7 @@ class TestStatements(BaseTest):
         ss('.input-base-control').element(1).click().set_value(
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
         ss('.statements__count-btn').element(1).click()
+        s('.statements__count-number').should(have.text('2'))
         s('.main-btn_primary').click()
         s('.modal__wrapper').should(be.visible)
         s('.modal__close').click()
@@ -200,6 +211,7 @@ class TestStatements(BaseTest):
         ss('.input-base-control').element(1).click().set_value(
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
         ss('.statements__count-btn').element(1).click()
+        s('.statements__count-number').should(have.text('2'))
         s('.main-btn_primary').click()
         s('.modal__wrapper').should(be.visible)
         s('.modal__close').click()
@@ -221,6 +233,7 @@ class TestStatements(BaseTest):
         s('.uploader-base-control').type(get_test_file())
         s('.uploader-base-control').submit()
         ss('.statements__count-btn').element(1).click()
+        s('.statements__count-number').should(have.text('2'))
 
         s('.main-btn_primary').click()
         s('.modal__wrapper').should(be.visible)
@@ -238,6 +251,7 @@ class TestStatements(BaseTest):
         s('.input-base-control').click().set_value(
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
         ss('.statements__count-btn').element(1).click()
+        s('.statements__count-number').should(have.text('2'))
         s('.main-btn_primary').click()
         s('.modal__wrapper').should(be.visible)
         s('.modal__close').click()
@@ -254,6 +268,7 @@ class TestStatements(BaseTest):
         s('.input-base-control').click().set_value(
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
         ss('.statements__count-btn').element(1).click()
+        s('.statements__count-number').should(have.text('2'))
         s('.main-btn_primary').click()
         s('.modal__wrapper').should(be.visible)
         s('.modal__close').click()
