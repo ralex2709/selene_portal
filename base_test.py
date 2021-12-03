@@ -42,7 +42,7 @@ class BaseTest:
 
     def assert_news_page(self):
         s('.thanks-aside').should(be.visible)
-        assert browser.driver.current_url == 'https://maxitest.ru/news'
+        assert browser.driver.current_url == 'https://maxitest.ru/'
 
     def clear_screens(self):
         if BaseTest.first_test:

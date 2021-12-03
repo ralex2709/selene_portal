@@ -242,4 +242,4 @@ class TestStatements(BaseTest):
 
 def assert_news_page():
     s('.thanks-aside').should(be.visible)
-    assert browser.driver.current_url == 'https://maxitest.ru/news'
+    assert browser.driver.current_url == 'https://maxitest.ru/'
