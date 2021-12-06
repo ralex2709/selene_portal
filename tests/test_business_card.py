@@ -1,3 +1,4 @@
+from selene.support.shared import browser
 from selene.support.shared.jquery_style import s, ss
 from selene import be
 from selene import command
@@ -9,7 +10,6 @@ class TestBusinessCard(BaseTest):
     fio_portal = 'Тестовый тест'
     fio_not_portal = 'Токач Диана'
 
-
     def setup(self):
         super().setup()
         s('#test-services_nav').hover()
@@ -20,7 +20,7 @@ class TestBusinessCard(BaseTest):
         s('.business-card-modal__body').should(be.visible)
         s('.close-modal').click()
 
-        s('#test-services_business-card__fio').perform(command.js.scroll_into_view)
+        browser.driver.execute_script("window.scrollTo(0, 0)")
         s('#test-services_business-card__fio').should(be.visible)
         s('#test-services_business-card__fio').click()
         s('#test-services_business-card__fio').clear()
