@@ -20,12 +20,14 @@ class TestBusinessCard(BaseTest):
         s('.business-card-modal__body').should(be.visible)
         s('.close-modal').click()
 
+    def test_fio(self):
         browser.driver.execute_script("window.scrollTo(0, 0)")
         s('#test-services_business-card__fio').should(be.visible)
         s('#test-services_business-card__fio').click()
         s('#test-services_business-card__fio').clear()
         s('#test-services_business-card__fio').click().set_value(self.fio_portal)
-        ss('.user-finder-option__name').element(0).click()
+        ss('.user-finder-option__name').element(1).click()
+        #browser.driver.execute_script('#test-services_business-card__button')
+        s('#test-services_business-card__button').should(be.visible)
         s('#test-services_business-card__button').click()
-        s('.business-card-modal__body').should(be.visible)
         s('.close-modal').click()
